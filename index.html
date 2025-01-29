@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERSONAL-PORTFOLIO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!--HOME PAGE-->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1><span class="highlight">B</span>harathkumar</h1>
+                <ul>
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#certtification">CERTIFICATIONS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <i class="fa-solid fa-xmark" id="xmark"></i>
+                </ul>
+                <i class="fa-solid fa-bars" id="bar"></i>
+            </nav>
+            <div class="header-text">
+                <h1>HI, I'M <span class="highlight">BHARATHKUMAR</span></h1>
+                <p style="color: lightyellow;">WEB DEVELOPER - TRAINEE</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Side Navigation Menu -->
+    <div id="side-nav" class="side-nav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#header">HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#certtification">CERTIFICATIONS</a>
+        <a href="#contact">CONTACT</a>
+    </div>
+
+    <!--ABOUT-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="profile.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-tittle">ABOUT ME</h1>
+                    <p style="color: lightcyan;">
+                        "I am a passionate Web Developer Trainee, eager to design and build user-friendly, responsive websites while continuously learning and growing in the field of web development. With a keen eye for detail and a commitment to writing clean, efficient code, I strive to create digital experiences that are both visually appealing and highly functional. I am enthusiastic about exploring new technologies, enhancing my problem-solving skills, and contributing to innovative projects that make a meaningful impact."
+                    </p>
+                    <div class="tab-titles">
+                        <div class="tab-links active-link" onclick="opentab('skills', event)">SKILLS</div>
+                        <div class="tab-links" onclick="opentab('education', event)">EDUCATION</div>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML</span><br>Hyper Text Markup Language</li>
+                            <li><span>CSS</span><br>Cascading Style Sheets</li>
+                            <li><span>JS</span><br>JavaScript</li>
+                            <li><span>PYTHON</span><br>Programming language</li>
+                            <li><span>SQL</span><br>Structured Query Language</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>BE-Computer Science(2021-2025)</span><br>Kingston Engineering College, Vellore</li>
+                            <li><span>HSC-(2019-2021)</span><br>Sri Ramakrishna Higher Secondary School</li>
+                            <li><span>SSLC-(2017-2019)</span><br>Government High School, Walajapet, Ranipet Dist</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--MY PROJECTS-->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">PROJECTS</h1>
+        </div>
+        <div class="work-list">
+            <div class="work">
+                <img src="ecommerce.jpg" alt="">
+                <div class="layer">
+                    <h3>FASHION E-COMMERCE WEBSITE</h3>
+                    <p>A Fashion E-Commerce Website created using HTML, CSS, and JavaScript features a visually appealing with responsive layouts.</p>
+                    <a href="https://bharathkumar15032004.github.io/basic-ecommerce-website/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="calculator.png" alt="">
+                <div class="layer">
+                    <h3>CALCULATOR</h3>
+                    <p>A CALCULATOR built with HTML, CSS, and JavaScript for addition, subtraction, multiplication, and division functionalities.</p>
+                    <a href="https://bharathkumar15032004.github.io/calculator/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="todo-list-img.jpg" alt="">
+                <div class="layer">
+                    <h3>TODO-LIST</h3>
+                    <p>A To-Do List application built with HTML, CSS, and JavaScript to efficiently manage tasks with add and delete functionality.</p>
+                    <a href="https://bharathkumar15032004.github.io/todo-list/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--CERTIFICATIONS-->
+    <div id="certtification">
+        <div class="container">
+            <h1 class="sub-title">CERTIFICATIONS</h1>
+        </div>
+        <div class="slider">
+            <div class="slider-container">
+                <img src="certification/nm-fullstack.png">
+                <img src="certification/meta course.png">
+                <img src="certification/python basic.png">
+                <img src="certification/sql intermidiate.png">
+                <img src="certification/agile.png">
+                <img src="certification/integration.png">
+            </div>
+            <button class="prev-btn" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next-btn" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+    </div>
+
+    <!--CONTACT-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">CONTACT ME</h1>
+                    <p><i class="fa-regular fa-envelope"></i>bharathkumarr1503@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>8637664502</p>
+                    <div class="socialmedia-icons">
+                        <a href="https://www.instagram.com/_bkr_6/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/bharath-kumar-5b2035341/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Bharathkumar15032004"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <div class="btn-container">
+                        <a href="resume/my_resume.pdf" download="my_resume.pdf" class="btn">DOWNLOAD RESUME</a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="NAME" placeholder="YOUR NAME" required>
+                        <input type="email" name="EMAIL" placeholder="YOUR EMAIL" required>
+                        <textarea name="MESSAGE" placeholder="YOUR MESSAGE" rows="5" required></textarea>
+                        <button type="submit" class="btn-2">SUBMIT</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--JAVA SCRIPT-->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname, event) {
+            // Remove active class from all tab links
+            for (var tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+
+            // Remove active class from all tab contents
+            for (var tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            // Add active class to the clicked tab link
+            event.currentTarget.classList.add("active-link");
+
+            // Add active class to the corresponding tab content
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        // CERTIFICATIONS
+        let currentIndex = 0; // Track the current index of the image
+
+        function moveSlide(direction) {
+            const sliderContainer = document.querySelector('.slider-container');
+            const slides = document.querySelectorAll('.slider-container img');
+            const totalSlides = slides.length;
+
+            // Update the current index
+            currentIndex += direction;
+
+            // Loop around if out of bounds
+            if (currentIndex < 0) {
+                currentIndex = totalSlides - 1;
+            } else if (currentIndex >= totalSlides) {
+                currentIndex = 0;
+            }
+
+            // Calculate the new transform value based on the container's width
+            const slideWidth = sliderContainer.clientWidth;
+            const newTransform = -currentIndex * slideWidth;
+            sliderContainer.style.transform = `translateX(${newTransform}px)`;
+        }
+
+        // Ensure the slider resizes correctly when the window size changes
+        window.addEventListener('resize', () => {
+            const sliderContainer = document.querySelector('.slider-container');
+            const slideWidth = sliderContainer.clientWidth;
+            const newTransform = -currentIndex * slideWidth;
+            sliderContainer.style.transform = `translateX(${newTransform}px)`;
+        });
+
+        // Side Navigation
+        function openNav() {
+            document.getElementById("side-nav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("side-nav").style.width = "0";
+        }
+
+        // Toggle side navigation on small screens
+        document.getElementById("bar").addEventListener("click", openNav);
+        document.getElementById("xmark").addEventListener("click", closeNav);
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwzy2EdHjtvNMeXeIrJF74ZsdUvskjoD4VMt4BqZSzbn643pJpUNEns5qncJfOpYEIbGg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
